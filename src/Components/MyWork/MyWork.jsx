@@ -27,8 +27,15 @@ const MyWork = () => {
         })}
       </div>
       <div className="mywork-showmore">
+      <a
+          href="https://github.com/nafihkk?tab=repositories" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2"
+        >
         <p>Show More</p>
         <img src={arrow_icon} alt="" />
+        </a>
       </div>
     </div>
   );
