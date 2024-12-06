@@ -1,0 +1,69 @@
+/* Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark background with 70% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: black; /* White background */
+    padding: 30px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    width: 90%;
+    max-width: 600px; /* Maximum width of 600px */
+    position: relative;
+    box-shadow: 0px 0px 10px rgba(245, 239, 239, 0.2); /* Add a subtle shadow */
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: white; /* Light gray color */
+  }
+  
+  .modal-close:hover {
+    color: #666666; /* Dark gray color on hover */
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .modal-header h2 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 250px;
+    color: white;
+  }
+  
+  .modal-body p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 150px;
+  }
+  
+  .modal-body a {
+    text-decoration: underline;
+    color: white; 
+  }
+  
+  .modal-body a:hover {
+    color: #2782d1; /* Darker blue color on hover */
+  }
