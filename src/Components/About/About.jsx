@@ -1,9 +1,22 @@
 import React from 'react'
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
-import profile_img from '../../assets/prof.jpg'
+import profile_img from '../../assets/profss.jpg'
 
 const About = () => {
+      // 🔥 Auto Experience Calculation
+  const internshipStart = new Date("2024-09-01"); // <-- change your start date
+  const today = new Date();
+
+  const diffMonths =
+    (today.getFullYear() - internshipStart.getFullYear()) * 12 +
+    (today.getMonth() - internshipStart.getMonth());
+
+  const experienceText = diffMonths < 12
+    ? `${diffMonths} `
+    : `${(diffMonths / 12).toFixed(1)} `;
+    
+    
   return (
     <div id='about' className='about'>
         <div className="about-title">
@@ -22,16 +35,16 @@ const About = () => {
                 <div className="about-skills">
                     <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"80%"}}/></div>
                     <div className="about-skill"><p>Bootstrap</p><hr style={{width:"70%"}}/></div>
-                    <div className="about-skill"><p>React JS</p><hr style={{width:"65%"}}/></div>
-                    <div className="about-skill"><p>JavaScript </p><hr style={{width:"50%"}}/></div>
+                    <div className="about-skill"><p>React JS</p><hr style={{width:"85%"}}/></div>
+                    <div className="about-skill"><p>JavaScript </p><hr style={{width:"70%"}}/></div>
                     <div className="about-skill"><p>MongoDB</p><hr style={{width:"60%"}}/></div>
                 </div>
             </div>
         </div>
         <div className="about-achievements">
             <div className="about-achievement">
-                <h1>2</h1>
-                <p>MONTHS OF INTERNSHIP EXPERIENCE</p>
+                        <h1>{experienceText}</h1>
+                <p>YEARS OF WORK EXPERIENCE</p>
             </div>
             <hr />
             <div className="about-achievement">
