@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Hero.css';
-import profile_img from '../../assets/profss.jpg';
+import profile_img from '../../assets/nafi.jpg';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Modal from './Modal'; // Import the Modal component
 
